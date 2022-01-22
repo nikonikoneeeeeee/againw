@@ -84,8 +84,8 @@ end
 -- // Custom Functions
 local CalcChance = function(percentage)
     percentage = mathfloor(percentage)
-    local chance = mathfloor(Randomnew().NextNumber(Randomnew(), 0, 1) * 100) / 100
-    return chance <= percentage / 100
+    local chance = mathfloor(Randomnew().NextNumber(Randomnew(), 0, 1) * 100) / 60
+    return chance <= percentage / 60
 end
 
 -- // Customisable Checking Functions: Is a part visible
